@@ -7,7 +7,83 @@
     <title>Figuras Geometricas</title>
 </head>
 <body>
-    <h1>Calculo de figuras geometricas con JS</h1>
+    <header>
+        <h1>Calculo de figuras geometricas con JS</h1>
+    </header>
+
+    <main>
+        <div>
+            <section>
+                <h2>Cuadrado</h2>
+                <h3>Calculo del área y el perimetro de un cuadrado</h3>
+    
+                <form>
+                    <label for="lado">Cuánto mide cada lado del cuadrado</label>
+                    <input type="number" id="lado" placeholder="5" />
+                    <button type="button" onclick="calcularPerimetro()">Perimetro</button>
+                    <button type="button" onclick="calcularArea()">Área</button>
+                    <span class="resultado"></span>
+                </form>
+            </section>
+    
+            <section>
+                <h2>Triangulo</h2>
+                <h3>Calculo del área y el perimetro de un triangulo</h3>
+    
+                <form>
+                    <label for="lado1">Cuánto mide el lado 1 del triangulo
+                        <input type="number" id="lado1" placeholder="5" />
+                    </label>
+    
+    
+                    <label for="lado2">Cuánto mide el lado 2 del triangulo
+                        <input type="number" id="lado2" placeholder="5" />
+                    </label>
+                    
+    
+                    <label for="base">Cuánto mide la base  del triangulo
+                        <input type="number" id="base" placeholder="5" />
+                    </label>
+    
+                    <label for="altura">Cuánto mide la altura  del triangulo
+                        <input type="number" id="altura" placeholder="5" />
+                    </label>
+                    
+    
+                    <button type="button" onclick="calcularPTriangulo()">Perimetro</button>
+                    <button type="button" onclick="calcularATriangulo()">Área</button>
+                    <button type="button" onclick="calcularAltura()">Altura</button>
+                    <span class="resultado-t"></span>
+                </form>
+            </section>
+    
+            <section>
+                <h2>Circulo</h2>
+                <h3>Calculo del área y el perimetro de un circulo</h3>
+    
+                <form>
+                    <label for="radio">Cuánto mide el radio del circulo
+                        <input type="number" id="radio" placeholder="5" />
+                    </label>
+                    
+                    <button type="button" onclick="calculoDiametro()">Diametro</button>
+                    <button type="button" onclick="calculoPerimetroC()">Perimetro</button>
+                    <button type="button" onclick="calculoAreaC()">Área</button>
+                    <span class="resultado-c"></span>
+                </form>
+            </section>
+        </div>
+
+        <div>
+            
+        </div>
+        
+    </main>
+
+    <footer>
+
+    </footer>
+
     <script src="./figuras.js"></script>
 </body>
 </html>
